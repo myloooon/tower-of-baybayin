@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/home screen.unity
+    guid: e1388b92fd9f37c4684a74c821649e77
+  - enabled: 1
+    path: Assets/Scenes/main game.unity
+    guid: 7541c43099d7e924daa49b15f5b82069
+  - enabled: 1
+    path: Assets/Scenes/learn.unity
+    guid: 9ecc48b4951df9248bcb24f147ff58b3
+  - enabled: 1
+    path: Assets/Scenes/learn2.unity
+    guid: e6e3bcb835fa6d84db19813878fc57c2
+  - enabled: 1
+    path: Assets/Scenes/learnlast.unity
+    guid: 14bc3d958d2d49541a1d473273afb8b8
+  - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: 9af773cf04f4894428426b91ec1acf23
+  - enabled: 1
+    path: Assets/Scenes/u lose lol.unity
+    guid: 0b49e8c9268e84942a287f7540ac3862
+  m_configObjects: {}
