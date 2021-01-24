@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class FinalScore : MonoBehaviour
 {
     int myScore;
-    // Start is called before the first frame update
     void Start()
     {
         //int myScore;

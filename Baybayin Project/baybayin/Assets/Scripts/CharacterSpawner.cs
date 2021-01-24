@@ -39,36 +39,25 @@ public class CharacterSpawner : MonoBehaviour
         {
             while (this.gameObject)
             {
-                if (gameStart == 1)
-                {
-                    //yield return new WaitForSeconds(1); 
-                    lastCharPos = Random.Range(0, characters.Length);
-                    charQueue.Enqueue(Instantiate(characters[lastCharPos], spawnVector, Quaternion.identity));
-                    gameStart = 0;
-                }
-                else
+                if (gameStart != 1)
                 {
                     nextCharPos = Random.Range(0, characters.Length);
                     while (lastCharPos == nextCharPos)
                     {
                         nextCharPos = Random.Range(0, characters.Length);
                     }
-
                     yield return new WaitForSeconds(timeBetweenChars); 
                     charQueue.Enqueue(Instantiate(characters[nextCharPos], spawnVector, Quaternion.identity));
                     lastCharPos = nextCharPos;
-
-                    //Debug.Log(charQueue.Count);
-
-                    //if (charQueue.Count == 8 || health == 0) //change value of queue size if needed
-                    //{
-                    //    SceneManager.LoadScene("u lose lol"); //if tower gets too large, game over
-                    //    Debug.Log("game over!");
-                    //    Debug.Log("Score: " + score);
-                    //}
-
                 }
 
+                else
+                {
+                    //yield return new WaitForSeconds(1); 
+                    lastCharPos = Random.Range(0, characters.Length);
+                    charQueue.Enqueue(Instantiate(characters[lastCharPos], spawnVector, Quaternion.identity));
+                    gameStart = 0;
+                }
             }
         }
 

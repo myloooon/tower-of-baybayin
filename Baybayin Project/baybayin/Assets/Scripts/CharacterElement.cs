@@ -34,18 +34,18 @@ public class CharacterElement : MonoBehaviour
                 
                 if (characterSpawner.charQueue.Peek() == this.gameObject)
                 {
-                    //Debug.Log("Player input: " + currString);
-                    if (currString == gameObject.name)
+                    if ((currString == gameObject.name) || 
+                        (gameObject.name == "e" && currString == "i") || 
+                        (gameObject.name == "o" && currString == "u"))
                     {
-                        //Debug.Log(characterSpawner.charQueue.Peek());
                         characterSpawner.score++;
                         Debug.Log("Input was " + currString + ". Correct! Current score: " + characterSpawner.score);
                         characterSpawner.charQueue.Dequeue();
                         Destroy(gameObject);
-                        //Debug.Log(characterSpawner.charQueue.Peek());
                         currString = "";
                         break;
                     }
+
                     else
                     {   //BUG: There is currently some sort of issue with the health counter decrementing incorrectly. Maybe correct and add feature later in update after release?
                         if (/*prevQueueLength == characterSpawner.charQueue.Count && */(currString != "")) // >=
@@ -67,9 +67,3 @@ public class CharacterElement : MonoBehaviour
     }
 
 }
-
-
-
-
-//I just Marie Kondo'd the crap outta this code it is SO MUCH MORE LEGIBLE NOW
-//these lines SPARK JOY
