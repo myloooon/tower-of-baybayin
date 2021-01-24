@@ -1345,9 +1345,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tower of Baybayin\nVersion 0.1\nCopyright \xA9 2019\r\nAll rights reserved.\n\nCreated
-    by Mylene Haus\nDeveloped in Unity\n\nSpecial thanks to Nate, my fianc\xE9.\nYou
-    the one."
+  m_Text: "Tower of Baybayin\nVersion 0.2\n\nCreated by Mylene Haus\nDeveloped in
+    Unity\n\nSpecial thanks to Nate, my fianc\xE9.\nYou the one."
 --- !u!222 &1614003738
 CanvasRenderer:
   m_ObjectHideFlags: 0
